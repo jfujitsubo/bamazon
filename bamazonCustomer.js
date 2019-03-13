@@ -17,6 +17,13 @@ function userPrompt() {
             message: 'enter Item ID',
             validate: inputValidation,
             filter: Number,
+        },
+        {
+            type: 'input',
+            name: 'quantity',
+            message: "enter amount needed",
+            validate: inputValidation,
+            filter: Number,
         }
     ]).then(function(input) {
         var item = input.item_id;
